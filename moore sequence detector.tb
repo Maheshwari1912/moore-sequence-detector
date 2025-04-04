@@ -1,0 +1,18 @@
+module moore_seq_det_tb();
+reg clk,rst,in;
+wire [1:0] present_state;
+wire out;
+moore_seq_det dut(clk,rst,in,present_state,out);
+initial begin
+clk=0;
+forever #5 clk=~clk;
+end
+initial begin
+rst=1; #10 rst=0;
+in=1;#10;in=1;#10;in=0;#10;in=1;#10
+in=1;#10;in=1;#10;in=0;#10;in=0;#10
+in=0;#10;in=1;#10;in=0;#10;in=1;#10
+in=1;#10;in=1;#10;in=0;#10;in=1;#50
+$finish;
+end
+endmodule
