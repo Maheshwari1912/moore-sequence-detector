@@ -68,6 +68,10 @@ Uses five states (s0 to s4).
 
 Resets on rst = 1 to reinitialize detection.
 
+**state diagram:**
+
+![WhatsApp Image 2025-04-04 at 14 45 56_721128e7](https://github.com/user-attachments/assets/2e09238f-4fe0-46df-8030-c7ae7d76e4e7)
+
 **simulation results:**
 
 ![image](https://github.com/user-attachments/assets/67168eb8-5e62-487c-80fc-8d1a3fcf2de8)
